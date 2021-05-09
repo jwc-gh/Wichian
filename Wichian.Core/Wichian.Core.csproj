@@ -4,6 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
     <NoWarn>1701;1702;1591</NoWarn>
     <DocumentationFile>Wichian.Core.xml</DocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0-alpha</Version>
+    <Authors>Wichian</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +16,17 @@
   <ItemGroup>
     <PackageReference Include="Furion" Version="2.2.3" />
     <PackageReference Include="Furion.Extras.ObjectMapper.Mapster" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ERP\" />
+    <Folder Include="APS\" />
+    <Folder Include="WMS\" />
+    <Folder Include="CRM\" />
+    <Folder Include="HRM\" />
+    <Folder Include="BOM\" />
+    <Folder Include="MES\" />
+    <Folder Include="SCM\" />
   </ItemGroup>
 
 </Project>
