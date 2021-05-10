@@ -4,5 +4,505 @@
         <name>Wichian.Core</name>
     </assembly>
     <members>
+        <member name="F:Wichian.Core.ERP.APS.APS.editplan">
+            <summary>
+            编辑版本
+            增Insert、删Delete、改Update操作均在该版本进行
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.APS.APS.fixedplan">
+            <summary>
+            锁定版本
+            初始载入Load和确认提交Submit后才更新此版本
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.ERP.APS.APS.Load">
+            <summary>
+            载入计划
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.ERP.APS.APS.Submit">
+            <summary>
+            提交计划
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.ERP.APS.APS.Clone(Wichian.Core.ERP.APS.Job)">
+            <summary>
+            复制计划
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.ERP.APS.APS.Insert(Wichian.Core.ERP.APS.Job)">
+            <summary>
+            插入计划
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Wichian.Core.ERP.APS.APS.Delete(Wichian.Core.ERP.APS.Job)">
+            <summary>
+            删除计划
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Wichian.Core.ERP.APS.APS.Update(Wichian.Core.ERP.APS.Job)">
+            <summary>
+            更新计划
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Wichian.Core.ERP.APS.APS.Sort(Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode)">
+            <summary>
+            重排计划
+            </summary>
+            <param name="mode"></param>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.APSEnum">
+            <summary>
+            计划排程枚举
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode">
+            <summary>
+            计划优先模式
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode.Deadline">
+            <summary>
+            交货期
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode.EquipmentUtilization">
+            <summary>
+            设备利用率
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode.Cost">
+            <summary>
+            成本
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode.ResourceUtilization">
+            <summary>
+            生产资源利用率
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.Calendar">
+            <summary>
+            日历
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.Equipment">
+            <summary>
+            生产设备
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.Job">
+            <summary>
+            生产任务单
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Job.Order">
+            <summary>
+            生产订单
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Job.ProcessFlow">
+            <summary>
+            生产工序流程
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.KeyEvent">
+            <summary>
+            关键事件
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.Materiel">
+            <summary>
+            物料生产计划
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Materiel.Type">
+            <summary>
+            物料类型
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Materiel.Loss">
+            <summary>
+            损耗品标记
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Materiel.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Materiel.Weight">
+            <summary>
+            重量
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.APS.Materiel.Materials">
+            <summary>
+            子物料集合
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Materiel.EffectiveDate">
+            <summary>
+            生效日期
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Materiel.ExpirationDate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Materiel.Substitute">
+            <summary>
+            替代物
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.Order">
+            <summary>
+            生产订单
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.Plan">
+            <summary>
+            生产计划
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.Process">
+            <summary>
+            生产工序
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.Process.Sequence">
+            <summary>
+            顺序号
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.APS.ProcessFlow">
+            <summary>
+            生产工序流程
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.APS.ProcessFlow.Processes">
+            <summary>
+            工序集合
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.BOM.Materiel">
+            <summary>
+            清单物料
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.BOM.Product">
+            <summary>
+            产品
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.CalendarBase">
+            <summary>
+            基础日历类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.CalendarBase.BeginDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.CalendarBase.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.EntityBase">
+            <summary>
+            基础实体类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.EntityBase.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.EntityBase.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.EntityBase.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.EntityBase.Creater">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.EntityBase.Modifier">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.EntityBase.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.EntityBase.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.EquipmentBase">
+            <summary>
+            基础设备类
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.JobBase">
+            <summary>
+            基础任务单类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.JobBase.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.JobBase.FinishTime">
+            <summary>
+            完成时间
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.MaterielBase">
+            <summary>
+            基础物料类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MaterielBase.Norm">
+            <summary>
+            品种规格
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MaterielBase.Model">
+            <summary>
+            型号
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.MES.Process">
+            <summary>
+            生产工序
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MES.Process.State">
+            <summary>
+            状态
+            0-启用
+            1-停用
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MES.Process.GroupType">
+            <summary>
+            分组类型
+            0-个人计件
+            1-分组计件/集体计件
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MES.Process.SalaryType">
+            <summary>
+            计薪类型
+            -1-未指定
+            0-不计薪
+            1-计数量
+            2-计重量
+            3-计时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MES.Process.PriceType">
+            <summary>
+            计价类型
+            -1-未指定
+            0-不计价
+            1-
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MES.Process.ControlMode">
+            <summary>
+            控制模式
+            -1-未指定
+            0-不限制
+            1-控制数量
+            2-控制重量
+            4-控制时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MES.Process.StdQuantity">
+            <summary>
+            标准数量
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MES.Process.StdWeight">
+            <summary>
+            标准重量
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.MES.Process.StdTime">
+            <summary>
+            标准时间
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.OMS.OMSEnum">
+            <summary>
+            订单管理枚举
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.OMS.OMSEnum.ProductionType">
+            <summary>
+            生产类型
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.OMS.OMSEnum.ProductionType.MTS">
+            <summary>
+            Make To Stock - 现货生产
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.OMS.OMSEnum.ProductionType.MTO">
+            <summary>
+            Make To Order - 订货生产
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.OMS.OMSEnum.ProductionType.ATO">
+            <summary>
+            Assemble To Order - 订货组装
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.ERP.OMS.OMSEnum.ProductionType.ETO">
+            <summary>
+            Engineer To Order - 工程生产
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.OrderBase">
+            <summary>
+            基础订单类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.OrderBase.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.OrderBase.Deadline">
+            <summary>
+            交期
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.OrganizationBase">
+            <summary>
+            基础组织类
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.PlanBase">
+            <summary>
+            基础计划类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PlanBase.BeginDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PlanBase.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PlanBase.Description">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PlanBase.Plans">
+            <summary>
+            子计划集合
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PlanBase.Staffs">
+            <summary>
+            人员集合
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PlanBase.Processes">
+            <summary>
+            工序集合
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PlanBase.Equipments">
+            <summary>
+            设备集合
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PlanBase.Materiels">
+            <summary>
+            物料集合
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.ProcessBase">
+            <summary>
+            基础工序类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.ProcessBase.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.ProcessBase.Barcode">
+            <summary>
+            条形码值
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.ProcessBase.QRCode">
+            <summary>
+            二维码值
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.ProcessBase.RFIDCode">
+            <summary>
+            RFID值
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.ProcessBase.IDCardCode">
+            <summary>
+            IDCard值
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.SCM.Materiel">
+            <summary>
+            物料需求计划
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.SCM.Purchase">
+            <summary>
+            采购
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.StaffBase">
+            <summary>
+            基础员工类
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.TagBase">
+            <summary>
+            基础标识物类
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.WMS.Materiel">
+            <summary>
+            库存物料
+            </summary>
+        </member>
     </members>
 </doc>

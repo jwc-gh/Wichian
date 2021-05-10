@@ -5,9 +5,21 @@
     <NoWarn>1701;1702;1591</NoWarn>
     <DocumentationFile>Wichian.Core.xml</DocumentationFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.1.0-alpha</Version>
+    <Version>0.1.1-alpha</Version>
     <Authors>Wichian</Authors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CRM\**" />
+    <Compile Remove="HRM\**" />
+    <Compile Remove="MES\**" />
+    <EmbeddedResource Remove="CRM\**" />
+    <EmbeddedResource Remove="HRM\**" />
+    <EmbeddedResource Remove="MES\**" />
+    <None Remove="CRM\**" />
+    <None Remove="HRM\**" />
+    <None Remove="MES\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Remove="Wichian.Core.xml" />
@@ -19,14 +31,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ERP\" />
-    <Folder Include="APS\" />
-    <Folder Include="WMS\" />
-    <Folder Include="CRM\" />
-    <Folder Include="HRM\" />
-    <Folder Include="BOM\" />
-    <Folder Include="MES\" />
-    <Folder Include="SCM\" />
+    <Folder Include="ERP\CRM\" />
+    <Folder Include="ERP\HRM\" />
+    <Folder Include="ERP\TMS\" />
+    <Folder Include="ERP\VMS\" />
+    <Folder Include="ERP\ACM\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
   </ItemGroup>
 
 </Project>
