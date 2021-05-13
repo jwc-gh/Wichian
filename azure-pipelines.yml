@@ -10,12 +10,12 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 
 steps:
 - script: 
-    git remote add github https://github.com/jwc-gh/Wichian.git
+    git remote add github https://jwc-gh:githu879@github.com/jwc-gh/Wichian.git
     git checkout -b $(branch)
     git push -u github $(branch)
 
