@@ -12,7 +12,8 @@ pool:
 
 steps:
 - script: 
-    git remote add github https://github.com/jwc-gh/Wichian.git
+    git remote add github https://jwc-gh:githu879@github.com/jwc-gh/Wichian.git
+    git checkout -b main
     git push -u github main
 
   displayName: 'Sync Wichian From Azure To Github'
