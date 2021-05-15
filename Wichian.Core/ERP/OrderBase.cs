@@ -10,7 +10,7 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础订单类
     /// </summary>
-    public abstract class OrderBase : EntityBase
+    public abstract class OrderBase : C1Entity
     {
         /// <summary>
         /// 数量

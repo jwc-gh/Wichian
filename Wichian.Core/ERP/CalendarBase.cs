@@ -10,7 +10,7 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础日历类
     /// </summary>
-    public abstract class CalendarBase : EntityBase
+    public abstract class CalendarBase : C1Entity
     {
         /// <summary>
         /// 开始日期

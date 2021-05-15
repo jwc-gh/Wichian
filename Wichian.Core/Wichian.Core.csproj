@@ -35,7 +35,10 @@
     <Folder Include="ERP\HRM\" />
     <Folder Include="ERP\TMS\" />
     <Folder Include="ERP\VMS\" />
-    <Folder Include="ERP\ACM\" />
+    <Folder Include="ERP\ACS\" />
+    <Folder Include="ERP\PLM\" />
+    <Folder Include="Garment\" />
+    <Folder Include="Bleach\" />
   </ItemGroup>
 
   <ItemGroup>

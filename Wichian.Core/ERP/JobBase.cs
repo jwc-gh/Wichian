@@ -10,7 +10,7 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础任务单类
     /// </summary>
-    public abstract class JobBase : EntityBase
+    public abstract class JobBase : C1Entity
     {
         /// <summary>
         /// 开始时间

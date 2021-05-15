@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Wichian.Core.ERP.APS
 {
     /// <summary>
     /// 关键事件
     /// </summary>
-    public class KeyEvent : EntityBase
+    [Table("aps_keyevent")]
+    [Comment("关键事件信息表")]
+    public class KeyEvent : C2Entity
     {
     }
 }

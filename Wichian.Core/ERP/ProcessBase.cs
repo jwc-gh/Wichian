@@ -10,7 +10,7 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础工序类
     /// </summary>
-    public abstract class ProcessBase : EntityBase
+    public abstract class ProcessBase : C2Entity
     {
         /// <summary>
         /// 类型

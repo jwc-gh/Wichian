@@ -4,6 +4,59 @@
         <name>Wichian.Core</name>
     </assembly>
     <members>
+        <member name="T:Wichian.Core.Collector">
+            <summary>
+            采集器类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Collector.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Collector.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Collector.IP">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Collector.MAC">
+            <summary>
+            MAC地址
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Collector.ServiceURI">
+            <summary>
+            服务端地址
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.Collector.Login(System.String)">
+            <summary>
+            登录
+            </summary>
+            <param name="userid"></param>
+        </member>
+        <member name="M:Wichian.Core.Collector.Input(System.String)">
+            <summary>
+            输入
+            条形码/二维码/RFID/IDCard/电子秤
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Wichian.Core.Collector.Lock">
+            <summary>
+            锁定
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.Collector.Unlock">
+            <summary>
+            解锁
+            </summary>
+        </member>
         <member name="F:Wichian.Core.ERP.APS.APS.editplan">
             <summary>
             编辑版本
@@ -192,6 +245,11 @@
             工序集合
             </summary>
         </member>
+        <member name="T:Wichian.Core.ERP.APS.Worker">
+            <summary>
+            工人
+            </summary>
+        </member>
         <member name="T:Wichian.Core.ERP.BOM.Materiel">
             <summary>
             清单物料
@@ -200,6 +258,86 @@
         <member name="T:Wichian.Core.ERP.BOM.Product">
             <summary>
             产品
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.PrivateC1Entity`1">
+            <summary>
+            基础实体类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.CreateId">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.ModifyId">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.IsDeleted">
+            <summary>
+            软删除
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.ERP.PrivateC2Entity`1">
+            <summary>
+            基础实体类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.CreateId">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.ModifyId">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.IsDeleted">
+            <summary>
+            软删除
             </summary>
         </member>
         <member name="T:Wichian.Core.ERP.CalendarBase">
@@ -215,46 +353,6 @@
         <member name="P:Wichian.Core.ERP.CalendarBase.EndDate">
             <summary>
             结束日期
-            </summary>
-        </member>
-        <member name="T:Wichian.Core.ERP.EntityBase">
-            <summary>
-            基础实体类
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.EntityBase.Id">
-            <summary>
-            Id主键
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.EntityBase.Code">
-            <summary>
-            编码
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.EntityBase.Name">
-            <summary>
-            姓名
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.EntityBase.Creater">
-            <summary>
-            创建人
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.EntityBase.Modifier">
-            <summary>
-            修改人
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.EntityBase.CreateTime">
-            <summary>
-            创建时间
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.EntityBase.ModifyTime">
-            <summary>
-            修改时间
             </summary>
         </member>
         <member name="T:Wichian.Core.ERP.EquipmentBase">
@@ -404,6 +502,11 @@
             基础组织类
             </summary>
         </member>
+        <member name="T:Wichian.Core.ERP.PersonBase">
+            <summary>
+            基础人员类
+            </summary>
+        </member>
         <member name="T:Wichian.Core.ERP.PlanBase">
             <summary>
             基础计划类
@@ -489,11 +592,6 @@
             采购
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.StaffBase">
-            <summary>
-            基础员工类
-            </summary>
-        </member>
         <member name="T:Wichian.Core.ERP.TagBase">
             <summary>
             基础标识物类
@@ -502,6 +600,85 @@
         <member name="T:Wichian.Core.ERP.WMS.Materiel">
             <summary>
             库存物料
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.WorkerCode">
+            <summary>
+            工人编号
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.WorkerName">
+            <summary>
+            工人姓名
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.ProcessCode">
+            <summary>
+            工序编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.ProcessName">
+            <summary>
+            工序名称
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.OccurrenceDate">
+            <summary>
+            发生日期
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.JobNo">
+            <summary>
+            生产任务单号
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.ComboCode">
+            <summary>
+            色组编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.ComboName">
+            <summary>
+            色组名称
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.SizeCode">
+            <summary>
+            尺寸编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.SizeName">
+            <summary>
+            尺寸名称
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.TagNo">
+            <summary>
+            牌号
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.Weight">
+            <summary>
+            重量
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.ProductionRecord.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.Textile.MES.Tag.Type">
+            <summary>
+            类型
+            0 - 
+            1 - 捆扎牌
+            2 - 洗水唛
+            3 - 
             </summary>
         </member>
     </members>

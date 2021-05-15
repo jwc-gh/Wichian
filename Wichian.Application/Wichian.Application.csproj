@@ -9,17 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Bleach\**" />
+    <Compile Remove="Grament\**" />
+    <Compile Remove="Textile\**" />
+    <EmbeddedResource Remove="Bleach\**" />
+    <EmbeddedResource Remove="Grament\**" />
+    <EmbeddedResource Remove="Textile\**" />
+    <None Remove="Bleach\**" />
+    <None Remove="Grament\**" />
+    <None Remove="Textile\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Wichian.Application.xml" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Wichian.Core\Wichian.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Textile\" />
-    <Folder Include="Grament\" />
-    <Folder Include="Bleach\" />
   </ItemGroup>
 
 </Project>

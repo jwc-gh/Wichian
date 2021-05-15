@@ -10,7 +10,7 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础计划类
     /// </summary>
-    public abstract class PlanBase:EntityBase
+    public abstract class PlanBase : C2Entity
     {
         /// <summary>
         /// 开始日期
@@ -35,7 +35,7 @@ namespace Wichian.Core.ERP
         /// <summary>
         /// 人员集合
         /// </summary>
-        public virtual List<StaffBase> Staffs { get; set; }
+        public virtual List<PersonBase> Staffs { get; set; }
         /// <summary>
         /// 工序集合
         /// </summary>

@@ -10,7 +10,8 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础标识物类
     /// </summary>
-    public abstract class TagBase : EntityBase
+    public abstract class TagBase : C1Entity
     {
+        
     }
 }

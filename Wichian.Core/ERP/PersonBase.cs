@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore;
 namespace Wichian.Core.ERP
 {
     /// <summary>
-    /// 基础员工类
+    /// 基础人员类
     /// </summary>
-    public abstract class StaffBase : EntityBase
+    public abstract class PersonBase : C2Entity
     {
     }
 }

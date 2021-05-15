@@ -10,7 +10,7 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础物料类
     /// </summary>
-    public abstract class MaterielBase : EntityBase
+    public abstract class MaterielBase : C2Entity
     {
         /// <summary>
         /// 品种规格

@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Wichian.Core.ERP.APS
 {
     /// <summary>
-    /// 生产设备
+    /// 工人
     /// </summary>
-    [Table("aps_equipment")]
-    [Comment("生产设备信息表")]
-    public class Equipment : EquipmentBase
+    [Table("aps_worker")]
+    [Comment("工人信息表")]
+    public class Worker : PersonBase
     {
     }
 }

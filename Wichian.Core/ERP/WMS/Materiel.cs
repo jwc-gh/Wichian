@@ -9,7 +9,7 @@ namespace Wichian.Core.ERP.WMS
     /// <summary>
     /// 库存物料
     /// </summary>
-    public class Materiel : MaterielBase
+    public class Materiel
     {
     }
 }

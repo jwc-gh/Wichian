@@ -10,7 +10,7 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础设备类
     /// </summary>
-    public abstract class EquipmentBase : EntityBase
+    public abstract class EquipmentBase : C2Entity
     {
     }
 }

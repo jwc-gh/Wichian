@@ -10,7 +10,7 @@ namespace Wichian.Core.ERP
     /// <summary>
     /// 基础组织类
     /// </summary>
-    public abstract class OrganizationBase
+    public abstract class OrganizationBase : C2Entity
     {
         
     }

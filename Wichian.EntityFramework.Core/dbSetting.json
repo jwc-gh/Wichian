@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "Sqlite3ConnectionString": "Data Source=./Wichian.db"
+  }
+}

@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Wichian.Core.ERP.APS
 {
     /// <summary>
     /// 物料生产计划
     /// </summary>
+    [Table("aps_materiel")]
+    [Comment("物料生产计划信息表")]
     public class Materiel : MaterielBase
     {
         /// <summary>
         /// 物料类型
         /// </summary>
+        [Required]
         [Comment("物料类型")]
         public int Type { get; set; }
         /// <summary>

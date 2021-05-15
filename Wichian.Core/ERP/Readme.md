@@ -1,17 +1,19 @@
-﻿### ERP系统
+﻿### EMIS - 企业管理信息系统 - Enterprise Management Information  System
 包括：
-ACM - 门禁管理系统
-APS - 计划排程系统
-BOM - 物料清单管理
-CRM - 客户关系管理
-HRM - 人力资源管理
-MES - 制造执行系统
-OMS - 订单管理系统
-PRM - 人员关系管理
-SCM - 供应链管理
-TMS - 运输管理系统
-VMS - 车辆管理系统
-WMS - 仓储管理系统
+ACS - 门禁管理系统 - Access Control System
+APS - 计划排程系统 - Advanced Products & Systems
+BOM - 物料清单管理 - Bill of Material
+CRM - 客户关系管理 - Customer Relationship Management
+ERP - 企业资源计划 - Enterprise Resource Planning
+HRM - 人力资源管理 - Human Resource Management
+MES - 制造执行系统 - Manufacturing Execution System
+OMS - 订单管理系统 - Order Management System
+PLM - 产品生命周期管理 - Product Lifecycle Management
+PRM - 合作伙伴关系管理 - Partner Relationship Management
+SCM - 供应链管理 - Supply Chain Management
+TMS - 运输管理系统 - Transportation Management System
+VMS - 车辆管理系统 - Vehicle Management System
+WMS - 仓储管理系统 - Warehouse Management System
 
 ### 采用.Net Framework 风格的版本号命名格式:
 

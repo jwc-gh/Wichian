@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Wichian.Core.ERP.APS
 {
     /// <summary>
     /// 生产工序流程
     /// </summary>
-    public class ProcessFlow
+    [Table("aps_processflow")]
+    [Comment("生产工序流程信息表")]
+    public class ProcessFlow : C1Entity
     {
         /// <summary>
         /// 工序集合
