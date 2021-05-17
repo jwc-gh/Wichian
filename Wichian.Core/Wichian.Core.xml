@@ -4,6 +4,86 @@
         <name>Wichian.Core</name>
     </assembly>
     <members>
+        <member name="T:Wichian.Core.PrivateC1Entity`1">
+            <summary>
+            基础实体类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC1Entity`1.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC1Entity`1.CreateId">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC1Entity`1.ModifyId">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC1Entity`1.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC1Entity`1.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC1Entity`1.IsDeleted">
+            <summary>
+            软删除
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.PrivateC2Entity`1">
+            <summary>
+            基础实体类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC2Entity`1.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC2Entity`1.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC2Entity`1.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC2Entity`1.CreateId">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC2Entity`1.ModifyId">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC2Entity`1.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC2Entity`1.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.PrivateC2Entity`1.IsDeleted">
+            <summary>
+            软删除
+            </summary>
+        </member>
         <member name="T:Wichian.Core.Collector">
             <summary>
             采集器类
@@ -57,359 +137,279 @@
             解锁
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.APS.APS.editplan">
+        <member name="F:Wichian.Core.EMIS.APS.APS.editplan">
             <summary>
             编辑版本
             增Insert、删Delete、改Update操作均在该版本进行
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.APS.APS.fixedplan">
+        <member name="F:Wichian.Core.EMIS.APS.APS.fixedplan">
             <summary>
             锁定版本
             初始载入Load和确认提交Submit后才更新此版本
             </summary>
         </member>
-        <member name="M:Wichian.Core.ERP.APS.APS.Load">
+        <member name="M:Wichian.Core.EMIS.APS.APS.Load">
             <summary>
             载入计划
             </summary>
         </member>
-        <member name="M:Wichian.Core.ERP.APS.APS.Submit">
+        <member name="M:Wichian.Core.EMIS.APS.APS.Submit">
             <summary>
             提交计划
             </summary>
         </member>
-        <member name="M:Wichian.Core.ERP.APS.APS.Clone(Wichian.Core.ERP.APS.Job)">
+        <member name="M:Wichian.Core.EMIS.APS.APS.Clone(Wichian.Core.EMIS.APS.Job)">
             <summary>
             复制计划
             </summary>
             <param name="item"></param>
             <returns></returns>
         </member>
-        <member name="M:Wichian.Core.ERP.APS.APS.Insert(Wichian.Core.ERP.APS.Job)">
+        <member name="M:Wichian.Core.EMIS.APS.APS.Insert(Wichian.Core.EMIS.APS.Job)">
             <summary>
             插入计划
             </summary>
             <param name="item"></param>
         </member>
-        <member name="M:Wichian.Core.ERP.APS.APS.Delete(Wichian.Core.ERP.APS.Job)">
+        <member name="M:Wichian.Core.EMIS.APS.APS.Delete(Wichian.Core.EMIS.APS.Job)">
             <summary>
             删除计划
             </summary>
             <param name="item"></param>
         </member>
-        <member name="M:Wichian.Core.ERP.APS.APS.Update(Wichian.Core.ERP.APS.Job)">
+        <member name="M:Wichian.Core.EMIS.APS.APS.Update(Wichian.Core.EMIS.APS.Job)">
             <summary>
             更新计划
             </summary>
             <param name="item"></param>
         </member>
-        <member name="M:Wichian.Core.ERP.APS.APS.Sort(Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode)">
+        <member name="M:Wichian.Core.EMIS.APS.APS.Sort(Wichian.Core.EMIS.APS.APSEnum.PlanPriorityMode)">
             <summary>
             重排计划
             </summary>
             <param name="mode"></param>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.APSEnum">
+        <member name="T:Wichian.Core.EMIS.APS.APSEnum">
             <summary>
             计划排程枚举
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode">
+        <member name="T:Wichian.Core.EMIS.APS.APSEnum.PlanPriorityMode">
             <summary>
             计划优先模式
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode.Deadline">
+        <member name="F:Wichian.Core.EMIS.APS.APSEnum.PlanPriorityMode.Deadline">
             <summary>
             交货期
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode.EquipmentUtilization">
+        <member name="F:Wichian.Core.EMIS.APS.APSEnum.PlanPriorityMode.EquipmentUtilization">
             <summary>
             设备利用率
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode.Cost">
+        <member name="F:Wichian.Core.EMIS.APS.APSEnum.PlanPriorityMode.Cost">
             <summary>
             成本
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.APS.APSEnum.PlanPriorityMode.ResourceUtilization">
+        <member name="F:Wichian.Core.EMIS.APS.APSEnum.PlanPriorityMode.ResourceUtilization">
             <summary>
             生产资源利用率
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.Calendar">
+        <member name="T:Wichian.Core.EMIS.APS.Calendar">
             <summary>
             日历
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.Equipment">
+        <member name="T:Wichian.Core.EMIS.APS.Equipment">
             <summary>
             生产设备
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.Job">
+        <member name="T:Wichian.Core.EMIS.APS.Job">
             <summary>
             生产任务单
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Job.Order">
+        <member name="P:Wichian.Core.EMIS.APS.Job.Order">
             <summary>
             生产订单
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Job.ProcessFlow">
+        <member name="P:Wichian.Core.EMIS.APS.Job.ProcessFlow">
             <summary>
             生产工序流程
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.KeyEvent">
+        <member name="T:Wichian.Core.EMIS.APS.KeyEvent">
             <summary>
             关键事件
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.Materiel">
+        <member name="T:Wichian.Core.EMIS.APS.Materiel">
             <summary>
             物料生产计划
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Materiel.Type">
+        <member name="P:Wichian.Core.EMIS.APS.Materiel.Type">
             <summary>
             物料类型
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Materiel.Loss">
+        <member name="P:Wichian.Core.EMIS.APS.Materiel.Loss">
             <summary>
             损耗品标记
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Materiel.Quantity">
+        <member name="P:Wichian.Core.EMIS.APS.Materiel.Quantity">
             <summary>
             数量
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Materiel.Weight">
+        <member name="P:Wichian.Core.EMIS.APS.Materiel.Weight">
             <summary>
             重量
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.APS.Materiel.Materials">
+        <member name="F:Wichian.Core.EMIS.APS.Materiel.Materials">
             <summary>
             子物料集合
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Materiel.EffectiveDate">
+        <member name="P:Wichian.Core.EMIS.APS.Materiel.EffectiveDate">
             <summary>
             生效日期
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Materiel.ExpirationDate">
+        <member name="P:Wichian.Core.EMIS.APS.Materiel.ExpirationDate">
             <summary>
             失效日期
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Materiel.Substitute">
+        <member name="P:Wichian.Core.EMIS.APS.Materiel.Substitute">
             <summary>
             替代物
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.Order">
+        <member name="T:Wichian.Core.EMIS.APS.Order">
             <summary>
             生产订单
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.Plan">
+        <member name="T:Wichian.Core.EMIS.APS.Plan">
             <summary>
             生产计划
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.Process">
+        <member name="T:Wichian.Core.EMIS.APS.Process">
             <summary>
             生产工序
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.Process.Sequence">
+        <member name="P:Wichian.Core.EMIS.APS.Process.Sequence">
             <summary>
             顺序号
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.ProcessFlow">
+        <member name="T:Wichian.Core.EMIS.APS.ProcessFlow">
             <summary>
             生产工序流程
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.APS.ProcessFlow.Processes">
+        <member name="P:Wichian.Core.EMIS.APS.ProcessFlow.Processes">
             <summary>
             工序集合
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.APS.Worker">
+        <member name="T:Wichian.Core.EMIS.APS.Worker">
             <summary>
             工人
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.BOM.Materiel">
+        <member name="T:Wichian.Core.EMIS.BOM.Materiel">
             <summary>
             清单物料
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.BOM.Product">
+        <member name="T:Wichian.Core.EMIS.BOM.Product">
             <summary>
             产品
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.PrivateC1Entity`1">
-            <summary>
-            基础实体类
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.Id">
-            <summary>
-            Id主键
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.CreateId">
-            <summary>
-            创建人
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.ModifyId">
-            <summary>
-            修改人
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.CreateTime">
-            <summary>
-            创建时间
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.ModifyTime">
-            <summary>
-            修改时间
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC1Entity`1.IsDeleted">
-            <summary>
-            软删除
-            </summary>
-        </member>
-        <member name="T:Wichian.Core.ERP.PrivateC2Entity`1">
-            <summary>
-            基础实体类
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.Id">
-            <summary>
-            Id主键
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.Code">
-            <summary>
-            编码
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.Name">
-            <summary>
-            姓名
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.CreateId">
-            <summary>
-            创建人
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.ModifyId">
-            <summary>
-            修改人
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.CreateTime">
-            <summary>
-            创建时间
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.ModifyTime">
-            <summary>
-            修改时间
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ERP.PrivateC2Entity`1.IsDeleted">
-            <summary>
-            软删除
-            </summary>
-        </member>
-        <member name="T:Wichian.Core.ERP.CalendarBase">
+        <member name="T:Wichian.Core.EMIS.CalendarBase">
             <summary>
             基础日历类
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.CalendarBase.BeginDate">
+        <member name="P:Wichian.Core.EMIS.CalendarBase.BeginDate">
             <summary>
             开始日期
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.CalendarBase.EndDate">
+        <member name="P:Wichian.Core.EMIS.CalendarBase.EndDate">
             <summary>
             结束日期
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.EquipmentBase">
+        <member name="T:Wichian.Core.EMIS.EquipmentBase">
             <summary>
             基础设备类
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.JobBase">
+        <member name="T:Wichian.Core.EMIS.JobBase">
             <summary>
             基础任务单类
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.JobBase.StartTime">
+        <member name="P:Wichian.Core.EMIS.JobBase.StartTime">
             <summary>
             开始时间
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.JobBase.FinishTime">
+        <member name="P:Wichian.Core.EMIS.JobBase.FinishTime">
             <summary>
             完成时间
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.MaterielBase">
+        <member name="T:Wichian.Core.EMIS.MaterielBase">
             <summary>
             基础物料类
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MaterielBase.Norm">
+        <member name="P:Wichian.Core.EMIS.MaterielBase.Norm">
             <summary>
             品种规格
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MaterielBase.Model">
+        <member name="P:Wichian.Core.EMIS.MaterielBase.Model">
             <summary>
             型号
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.MES.Process">
+        <member name="T:Wichian.Core.EMIS.MES.Process">
             <summary>
             生产工序
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MES.Process.State">
+        <member name="P:Wichian.Core.EMIS.MES.Process.State">
             <summary>
             状态
             0-启用
             1-停用
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MES.Process.GroupType">
+        <member name="P:Wichian.Core.EMIS.MES.Process.GroupType">
             <summary>
             分组类型
             0-个人计件
             1-分组计件/集体计件
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MES.Process.SalaryType">
+        <member name="P:Wichian.Core.EMIS.MES.Process.SalaryType">
             <summary>
             计薪类型
             -1-未指定
@@ -419,7 +419,7 @@
             3-计时间
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MES.Process.PriceType">
+        <member name="P:Wichian.Core.EMIS.MES.Process.PriceType">
             <summary>
             计价类型
             -1-未指定
@@ -427,7 +427,7 @@
             1-
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MES.Process.ControlMode">
+        <member name="P:Wichian.Core.EMIS.MES.Process.ControlMode">
             <summary>
             控制模式
             -1-未指定
@@ -437,167 +437,167 @@
             4-控制时间
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MES.Process.StdQuantity">
+        <member name="P:Wichian.Core.EMIS.MES.Process.StdQuantity">
             <summary>
             标准数量
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MES.Process.StdWeight">
+        <member name="P:Wichian.Core.EMIS.MES.Process.StdWeight">
             <summary>
             标准重量
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.MES.Process.StdTime">
+        <member name="P:Wichian.Core.EMIS.MES.Process.StdTime">
             <summary>
             标准时间
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.OMS.OMSEnum">
+        <member name="T:Wichian.Core.EMIS.OMS.OMSEnum">
             <summary>
             订单管理枚举
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.OMS.OMSEnum.ProductionType">
+        <member name="T:Wichian.Core.EMIS.OMS.OMSEnum.ProductionType">
             <summary>
             生产类型
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.OMS.OMSEnum.ProductionType.MTS">
+        <member name="F:Wichian.Core.EMIS.OMS.OMSEnum.ProductionType.MTS">
             <summary>
             Make To Stock - 现货生产
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.OMS.OMSEnum.ProductionType.MTO">
+        <member name="F:Wichian.Core.EMIS.OMS.OMSEnum.ProductionType.MTO">
             <summary>
             Make To Order - 订货生产
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.OMS.OMSEnum.ProductionType.ATO">
+        <member name="F:Wichian.Core.EMIS.OMS.OMSEnum.ProductionType.ATO">
             <summary>
             Assemble To Order - 订货组装
             </summary>
         </member>
-        <member name="F:Wichian.Core.ERP.OMS.OMSEnum.ProductionType.ETO">
+        <member name="F:Wichian.Core.EMIS.OMS.OMSEnum.ProductionType.ETO">
             <summary>
             Engineer To Order - 工程生产
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.OrderBase">
+        <member name="T:Wichian.Core.EMIS.OrderBase">
             <summary>
             基础订单类
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.OrderBase.Quantity">
+        <member name="P:Wichian.Core.EMIS.OrderBase.Quantity">
             <summary>
             数量
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.OrderBase.Deadline">
+        <member name="P:Wichian.Core.EMIS.OrderBase.Deadline">
             <summary>
             交期
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.OrganizationBase">
+        <member name="T:Wichian.Core.EMIS.OrganizationBase">
             <summary>
             基础组织类
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.PersonBase">
+        <member name="T:Wichian.Core.EMIS.PersonBase">
             <summary>
             基础人员类
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.PlanBase">
+        <member name="T:Wichian.Core.EMIS.PlanBase">
             <summary>
             基础计划类
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.PlanBase.BeginDate">
+        <member name="P:Wichian.Core.EMIS.PlanBase.BeginDate">
             <summary>
             开始日期
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.PlanBase.EndDate">
+        <member name="P:Wichian.Core.EMIS.PlanBase.EndDate">
             <summary>
             结束日期
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.PlanBase.Description">
+        <member name="P:Wichian.Core.EMIS.PlanBase.Description">
             <summary>
             说明
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.PlanBase.Plans">
+        <member name="P:Wichian.Core.EMIS.PlanBase.Plans">
             <summary>
             子计划集合
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.PlanBase.Staffs">
+        <member name="P:Wichian.Core.EMIS.PlanBase.Staffs">
             <summary>
             人员集合
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.PlanBase.Processes">
+        <member name="P:Wichian.Core.EMIS.PlanBase.Processes">
             <summary>
             工序集合
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.PlanBase.Equipments">
+        <member name="P:Wichian.Core.EMIS.PlanBase.Equipments">
             <summary>
             设备集合
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.PlanBase.Materiels">
+        <member name="P:Wichian.Core.EMIS.PlanBase.Materiels">
             <summary>
             物料集合
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.ProcessBase">
+        <member name="T:Wichian.Core.EMIS.ProcessBase">
             <summary>
             基础工序类
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.ProcessBase.Type">
+        <member name="P:Wichian.Core.EMIS.ProcessBase.Type">
             <summary>
             类型
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.ProcessBase.Barcode">
+        <member name="P:Wichian.Core.EMIS.ProcessBase.Barcode">
             <summary>
             条形码值
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.ProcessBase.QRCode">
+        <member name="P:Wichian.Core.EMIS.ProcessBase.QRCode">
             <summary>
             二维码值
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.ProcessBase.RFIDCode">
+        <member name="P:Wichian.Core.EMIS.ProcessBase.RFIDCode">
             <summary>
             RFID值
             </summary>
         </member>
-        <member name="P:Wichian.Core.ERP.ProcessBase.IDCardCode">
+        <member name="P:Wichian.Core.EMIS.ProcessBase.IDCardCode">
             <summary>
             IDCard值
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.SCM.Materiel">
+        <member name="T:Wichian.Core.EMIS.SCM.Materiel">
             <summary>
             物料需求计划
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.SCM.Purchase">
+        <member name="T:Wichian.Core.EMIS.SCM.Purchase">
             <summary>
             采购
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.TagBase">
+        <member name="T:Wichian.Core.EMIS.TagBase">
             <summary>
             基础标识物类
             </summary>
         </member>
-        <member name="T:Wichian.Core.ERP.WMS.Materiel">
+        <member name="T:Wichian.Core.EMIS.WMS.Materiel">
             <summary>
             库存物料
             </summary>

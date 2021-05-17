@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Wichian.Core.ERP;
+using Wichian.Core.EMIS;
 namespace Wichian.Core.Textile.MES
 {
     public class ProductionRecord : C1Entity

@@ -31,14 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ERP\CRM\" />
-    <Folder Include="ERP\HRM\" />
-    <Folder Include="ERP\TMS\" />
-    <Folder Include="ERP\VMS\" />
-    <Folder Include="ERP\ACS\" />
-    <Folder Include="ERP\PLM\" />
-    <Folder Include="Garment\" />
-    <Folder Include="Bleach\" />
+    <Folder Include="EMIS\CRM\" />
+    <Folder Include="EMIS\HRM\" />
   </ItemGroup>
 
   <ItemGroup>
