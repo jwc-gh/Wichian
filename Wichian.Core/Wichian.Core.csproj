@@ -26,13 +26,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Furion" Version="2.2.3" />
-    <PackageReference Include="Furion.Extras.ObjectMapper.Mapster" Version="2.2.3" />
+    <Folder Include="EMIS\HRM\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="EMIS\CRM\" />
-    <Folder Include="EMIS\HRM\" />
+    <PackageReference Include="Furion" Version="2.7.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
+    <PackageReference Include="Yitter.IdGenerator" Version="1.0.12" />
   </ItemGroup>
 
   <ItemGroup>

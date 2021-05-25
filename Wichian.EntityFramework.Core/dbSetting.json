@@ -1,5 +1,7 @@
 {
   "ConnectionStrings": {
-    "Sqlite3ConnectionString": "Data Source=./Wichian.db"
+    "Sqlite3ConnectionString": "Data Source=./Wichian.db",
+    "EMISConnectionString": "Data Source=./emis.db",
+    "ARMConnectionString": "Data Source=./arm.db"
   }
 }

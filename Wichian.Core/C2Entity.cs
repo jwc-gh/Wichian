@@ -7,6 +7,9 @@ using System.Text.Json.Serialization;
 
 namespace Wichian.Core
 {
+    /// <summary>
+    /// 实体类：Id、编码、名称、创建人、修改人、创建时间、修改时间、软删除标记
+    /// </summary>
     public abstract class C2Entity : C2Entity<long, MasterDbContextLocator>
     {
     }

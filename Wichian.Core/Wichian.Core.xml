@@ -4,6 +4,31 @@
         <name>Wichian.Core</name>
     </assembly>
     <members>
+        <member name="T:Wichian.Core.ARM.Account">
+            <summary>
+            账号信息
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ARM.Account.AccountId">
+            <summary>
+            账号ID
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ARM.Account.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ARM.Account.Description">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.C1Entity">
+            <summary>
+            实体类：Id、创建人、修改人、创建时间、修改时间、软删除标记
+            </summary>
+        </member>
         <member name="T:Wichian.Core.PrivateC1Entity`1">
             <summary>
             基础实体类
@@ -37,6 +62,11 @@
         <member name="P:Wichian.Core.PrivateC1Entity`1.IsDeleted">
             <summary>
             软删除
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.C2Entity">
+            <summary>
+            实体类：Id、编码、名称、创建人、修改人、创建时间、修改时间、软删除标记
             </summary>
         </member>
         <member name="T:Wichian.Core.PrivateC2Entity`1">
@@ -83,6 +113,37 @@
             <summary>
             软删除
             </summary>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.AddItem(System.String,System.String,System.String)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.DeleteItem(System.String)">
+            <summary>
+            删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.UpdateItem(System.String,System.String,System.String)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.GetItem(System.Int32)">
+            <summary>
+            获取
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.GetSet(System.String)">
+            <summary>
+            获取集合
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Wichian.Core.Collector">
             <summary>
@@ -355,6 +416,141 @@
             结束日期
             </summary>
         </member>
+        <member name="T:Wichian.Core.EMIS.CM.Constant">
+            <summary>
+            常量信息
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.ConstantBase">
+            <summary>
+            基础常量类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ConstantBase.Group">
+            <summary>
+            分组
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.CRM.Contracts">
+            <summary>
+            客户联系人信息
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CRM.Contracts.Dept">
+            <summary>
+            部门
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CRM.Contracts.Title">
+            <summary>
+            职位
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CRM.Contracts.Telephone">
+            <summary>
+            固话号码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CRM.Contracts.Mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CRM.Contracts.Email">
+            <summary>
+            电子邮件
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CRM.Contracts.Address">
+            <summary>
+            邮寄地址
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CRM.Contracts.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.CRM.CRMEnum">
+            <summary>
+            客户管理枚举类
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.CRM.Customer">
+            <summary>
+            客户信息
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.CustomerBase">
+            <summary>
+            基础客户类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CustomerBase.IndustryType">
+            <summary>
+            行业
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CustomerBase.BusinessScope">
+            <summary>
+            业务范围
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CustomerBase.ContractDetails">
+            <summary>
+            联系方式
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.CustomerBase.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.EMISEnum">
+            <summary>
+            枚举类
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.EMISEnum.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.EMISEnum.Gender.Unknown">
+            <summary>
+            未指定
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.EMISEnum.Gender.Male">
+            <summary>
+            男性
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.EMISEnum.Gender.Female">
+            <summary>
+            女性
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.EMISEnum.IndustryType">
+            <summary>
+            行业类型
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.EMISEnum.IndustryType.Agriculture">
+            <summary>
+            农业
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.EMISEnum.IndustryType.Industry">
+            <summary>
+            工业
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.EMISEnum.IndustryType.ServiceIndustry">
+            <summary>
+            服务业
+            </summary>
+        </member>
         <member name="T:Wichian.Core.EMIS.EquipmentBase">
             <summary>
             基础设备类
@@ -454,7 +650,7 @@
         </member>
         <member name="T:Wichian.Core.EMIS.OMS.OMSEnum">
             <summary>
-            订单管理枚举
+            订单管理枚举类
             </summary>
         </member>
         <member name="T:Wichian.Core.EMIS.OMS.OMSEnum.ProductionType">
@@ -505,6 +701,36 @@
         <member name="T:Wichian.Core.EMIS.PersonBase">
             <summary>
             基础人员类
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.PersonBase.RIM">
+            <summary>
+            居民身份证号,Resident identification number
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.PersonBase.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.PersonBase.Birthday">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.PersonBase.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.PersonBase.Height">
+            <summary>
+            身高
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.PersonBase.Weight">
+            <summary>
+            体重
             </summary>
         </member>
         <member name="T:Wichian.Core.EMIS.PlanBase">

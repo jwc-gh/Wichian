@@ -10,6 +10,8 @@ namespace Wichian.EntityFramework.Core
             services.AddDatabaseAccessor(options =>
             {
                 options.AddDbPool<DefaultDbContext>();
+                options.AddDbPool<EMISDbContext, EMISDbContextLocator>();
+                options.AddDbPool<ARMDbContext, ARMDbContextLocator>();
             }, "Wichian.Database.Migrations");
         }
     }

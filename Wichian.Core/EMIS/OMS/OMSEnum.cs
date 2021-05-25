@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Wichian.Core.EMIS.OMS
 {
     /// <summary>
-    /// 订单管理枚举
+    /// 订单管理枚举类
     /// </summary>
     public class OMSEnum
     {
