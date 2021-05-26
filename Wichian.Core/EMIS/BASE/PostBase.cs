@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wichian.Core.EMIS.CRM
+namespace Wichian.Core.EMIS
 {
     /// <summary>
-    /// 客户信息
+    /// 基础岗位类
     /// </summary>
-    public class Customer : CorporationBase
+    public abstract class PostBase : C2Entity
     {
     }
 }

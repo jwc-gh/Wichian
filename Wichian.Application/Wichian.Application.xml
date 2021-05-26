@@ -4,5 +4,36 @@
         <name>Wichian.Application</name>
     </assembly>
     <members>
+        <member name="M:Wichian.Core.CmConstantService.AddItem(System.String,System.String,System.String)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.DeleteItem(System.String)">
+            <summary>
+            删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.UpdateItem(System.String,System.String,System.String)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.GetItem(System.Int32)">
+            <summary>
+            获取
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.CmConstantService.GetSet(System.String)">
+            <summary>
+            获取集合
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

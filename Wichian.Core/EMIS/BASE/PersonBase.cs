@@ -19,7 +19,7 @@ namespace Wichian.Core.EMIS
         /// <summary>
         /// 性别
         /// </summary>
-        public EMISEnum.Gender Gender { get; set; }
+        public Gender Gender { get; set; }
         /// <summary>
         /// 出生日期
         /// </summary>

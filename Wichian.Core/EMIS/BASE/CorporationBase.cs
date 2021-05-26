@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace Wichian.Core.EMIS
 {
     /// <summary>
-    /// 基础客户类
+    /// 基础法人团体类
     /// </summary>
-    public abstract class CustomerBase : C2Entity
+    public abstract class CorporationBase : C2Entity
     {
         /// <summary>
         /// 行业
         /// </summary>
-        public EMISEnum.IndustryType IndustryType { get; set; }
+        public IndustryType IndustryType { get; set; }
         /// <summary>
         /// 业务范围
         /// </summary>

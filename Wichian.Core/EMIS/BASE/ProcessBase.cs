@@ -8,19 +8,17 @@ using Microsoft.EntityFrameworkCore;
 namespace Wichian.Core.EMIS
 {
     /// <summary>
-    /// 基础任务单类
+    /// 基础工序类
     /// </summary>
-    public abstract class JobBase : C1Entity
+    public abstract class ProcessBase : C2Entity
     {
         /// <summary>
-        /// 开始时间
+        /// 类型
         /// </summary>
-        [Comment("开始时间")]
-        public virtual DateTime StartTime { get; set; }
+        public virtual int Type { get; set; }
         /// <summary>
-        /// 完成时间
+        /// 用时
         /// </summary>
-        [Comment("完成时间")]
-        public virtual DateTime FinishTime { get; set; }
+        public virtual decimal Time { get; set; }
     }
 }

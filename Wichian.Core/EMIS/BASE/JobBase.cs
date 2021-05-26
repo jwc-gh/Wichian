@@ -8,19 +8,19 @@ using Microsoft.EntityFrameworkCore;
 namespace Wichian.Core.EMIS
 {
     /// <summary>
-    /// 基础订单类
+    /// 基础任务单类
     /// </summary>
-    public abstract class OrderBase : C1Entity
+    public abstract class JobBase : C2Entity
     {
         /// <summary>
-        /// 数量
+        /// 开始时间
         /// </summary>
-        [Comment("数量")]
-        public virtual int Quantity { get; set; }
+        [Comment("开始时间")]
+        public virtual DateTime StartTime { get; set; }
         /// <summary>
-        /// 交期
+        /// 完成时间
         /// </summary>
-        [Comment("交期")]
-        public virtual DateTime Deadline { get; set; }
+        [Comment("完成时间")]
+        public virtual DateTime FinishTime { get; set; }
     }
 }

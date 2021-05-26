@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wichian.Core.EMIS.CRM
+namespace Wichian.Core.EMIS.SCM
 {
     /// <summary>
-    /// 客户管理枚举类
+    /// 供应商信息
     /// </summary>
-    public class CRMEnum
+    public class Supplier : CorporationBase
     {
-        
     }
 }

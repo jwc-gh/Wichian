@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 namespace Wichian.Core
 {
     /// <summary>
-    /// 实体类：Id、编码、名称、创建人、修改人、创建时间、修改时间、软删除标记
+    /// 通用实体类：Id、编码、名称、说明、创建人、修改人、创建时间、修改时间、软删除标记
     /// </summary>
     public abstract class C2Entity : C2Entity<long, MasterDbContextLocator>
     {
@@ -110,6 +110,12 @@ namespace Wichian.Core
         [Comment("名称")]
         [Required, MaxLength(50)]
         public virtual string Name { get; set; }
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Comment("说明")]
+        [Required, MaxLength(250)]
+        public virtual string Description { get; set; }
         /// <summary>
         /// 创建人
         /// </summary>

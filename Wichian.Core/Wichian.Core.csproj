@@ -5,7 +5,7 @@
     <NoWarn>1701;1702;1591</NoWarn>
     <DocumentationFile>Wichian.Core.xml</DocumentationFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.1.1-alpha</Version>
+    <Version>0.1.2-alpha</Version>
     <Authors>Wichian</Authors>
   </PropertyGroup>
 
@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="EMIS\HRM\" />
+    <Folder Include="EMIS\OMS\" />
   </ItemGroup>
 
   <ItemGroup>

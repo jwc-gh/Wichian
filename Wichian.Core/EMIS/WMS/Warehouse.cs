@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wichian.Core.EMIS.CRM
+namespace Wichian.Core.EMIS.WMS
 {
     /// <summary>
-    /// 客户信息
+    /// 仓库信息
     /// </summary>
-    public class Customer : CorporationBase
+    public class Warehouse : PlaceBase
     {
     }
 }

@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.BOM
     /// <summary>
     /// 产品
     /// </summary>
-    public class Product
+    public class Product : ProductBase
     {
         public List<Materiel> Materials;
     }

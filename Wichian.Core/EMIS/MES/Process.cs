@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.MES
     /// <summary>
     /// 生产工序
     /// </summary>
-    public class Process 
+    public class Process : ProcessBase
     {
         /// <summary>
         /// 状态

@@ -12,12 +12,12 @@ namespace Wichian.Core.EMIS.APS
         /// 编辑版本
         /// 增Insert、删Delete、改Update操作均在该版本进行
         /// </summary>
-        private List<Job> editplan;
+        //private List<Job> editplan;
         /// <summary>
         /// 锁定版本
         /// 初始载入Load和确认提交Submit后才更新此版本
         /// </summary>
-        private List<Job> fixedplan;
+        //private List<Job> fixedplan;
 
         private List<Job> plans;
         public APS()
@@ -75,6 +75,6 @@ namespace Wichian.Core.EMIS.APS
         /// 重排计划
         /// </summary>
         /// <param name="mode"></param>
-        public virtual void Sort(APSEnum.PlanPriorityMode mode= APSEnum.PlanPriorityMode.Deadline) { }
+        public virtual void Sort(PlanPriorityMode mode= PlanPriorityMode.Deadline) { }
     }
 }
