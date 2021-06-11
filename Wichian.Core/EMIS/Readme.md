@@ -18,6 +18,7 @@ HRM - 人力资源管理 - Human Resource Management
 LES - 物流执行系统 - Logistics Execution System
 MES - 制造执行系统 - Manufacturing Execution System
 MOM - 制造运营管理 - Manufacturing Operations Management 
+MRP-II - 制造资源计划 - Manufacturing Resource Planning
 PMS - 计划管理系统 - Plan Management System
 OMS - 订单管理系统 - Order Management System
 PLM - 产品生命周期管理 - Product Lifecycle Management

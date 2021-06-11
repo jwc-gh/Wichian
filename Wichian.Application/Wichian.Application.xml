@@ -4,6 +4,67 @@
         <name>Wichian.Application</name>
     </assembly>
     <members>
+        <member name="M:Wichian.Application.BaiduPan.GetAccessCode">
+            <summary>
+            获取Code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Application.BaiduPan.GetAccessToken">
+            <summary>
+            获取Token?
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Application.BaiduPan.GetAccessTokenByCode(System.String)">
+            <summary>
+            获取Token
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Application.BaiduPan.GetAccessTokenByRefreshToken(System.String)">
+            <summary>
+            获取Token
+            </summary>
+            <param name="refres_token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Application.BaiduPan.GetUserinfo(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Application.BaiduPan.GetFilelist(System.String)">
+            <summary>
+            获取文件列表
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Application.BaiduPan.GetFileinfo(System.String)">
+            <summary>
+            获取文件信息
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Application.BaiduPan.GetQuota(System.String)">
+            <summary>
+            获取网盘容量
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Application.BaiduPan.GetQuota2(System.String)">
+            <summary>
+            获取网盘容量
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
         <member name="M:Wichian.Core.CmConstantService.AddItem(System.String,System.String,System.String)">
             <summary>
             新增

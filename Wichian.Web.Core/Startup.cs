@@ -14,6 +14,13 @@ namespace Wichian.Web.Core
         {
             services.AddControllersWithViews()
                         .AddInject();
+            services.AddRemoteRequest(options =>{
+                options.AddHttpClient("baidu_pan", c =>
+                {
+                    c.BaseAddress = new Uri("https://pan.baidu.com/");
+                    c.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
+                });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -27,7 +34,7 @@ namespace Wichian.Web.Core
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

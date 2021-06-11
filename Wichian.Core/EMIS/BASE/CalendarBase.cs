@@ -13,14 +13,14 @@ namespace Wichian.Core.EMIS
     public abstract class CalendarBase : C1Entity
     {
         /// <summary>
-        /// 开始日期
+        /// 开始时间
         /// </summary>
-        [Comment("开始日期")]
-        public virtual DateTime BeginDate { get; set; }
+        [Comment("开始时间")]
+        public virtual DateTime BeginTime { get; set; }
         /// <summary>
-        /// 结束日期
+        /// 结束时间
         /// </summary>
-        [Comment("结束日期")]
-        public virtual DateTime EndDate { get; set; }
+        [Comment("结束时间")]
+        public virtual DateTime EndTime { get; set; }
     }
 }
