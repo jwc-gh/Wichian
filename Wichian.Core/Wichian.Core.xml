@@ -119,6 +119,11 @@
             软删除
             </summary>
         </member>
+        <member name="T:Wichian.Core.EMIS.APS.APS">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="F:Wichian.Core.EMIS.APS.APS.plans">
             <summary>
             锁定版本

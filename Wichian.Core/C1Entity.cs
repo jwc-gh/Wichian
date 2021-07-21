@@ -121,7 +121,7 @@ namespace Wichian.Core
         /// <summary>
         /// 软删除
         /// </summary>
-        [JsonIgnore, FakeDelete(true)]
+        [JsonIgnore]
         [Comment("软删除标记")]
         public virtual bool IsDeleted { get; set; } = false;
     }

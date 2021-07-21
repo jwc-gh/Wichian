@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Wichian.Core.EMIS.APS
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class APS
     {
         /// <summary>
