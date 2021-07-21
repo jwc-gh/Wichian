@@ -26,13 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="EMIS\HRM\" />
     <Folder Include="EMIS\OMS\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Furion.Extras.Admin.NET" Version="1.0.25" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Furion.Extras.Admin.NET" Version="1.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
   </ItemGroup>
 
   <ItemGroup>

@@ -14,7 +14,7 @@ ERP - 企业资源计划 - Enterprise Resource Planning
 	RCCP - 粗能力计划 - Rough-cut Capacity Planning
 	MRP - 物料需求计划 - Material Requirements Planning
 	CRP - 能力需求计划 - Capacity Requirements Planning
-HRM - 人力资源管理 - Human Resource Management
+HRS - 人力资源系统 - Human Resource System
 LES - 物流执行系统 - Logistics Execution System
 MES - 制造执行系统 - Manufacturing Execution System
 MOM - 制造运营管理 - Manufacturing Operations Management 

@@ -4,26 +4,6 @@
         <name>Wichian.Core</name>
     </assembly>
     <members>
-        <member name="T:Wichian.Core.ARM.Account">
-            <summary>
-            账号信息
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ARM.Account.AccountId">
-            <summary>
-            账号ID
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ARM.Account.Password">
-            <summary>
-            密码
-            </summary>
-        </member>
-        <member name="P:Wichian.Core.ARM.Account.Description">
-            <summary>
-            说明
-            </summary>
-        </member>
         <member name="T:Wichian.Core.C1Entity">
             <summary>
             通用实体类：Id、创建人、修改人、创建时间、修改时间、软删除标记
@@ -117,11 +97,6 @@
         <member name="P:Wichian.Core.PrivateC2Entity`1.IsDeleted">
             <summary>
             软删除
-            </summary>
-        </member>
-        <member name="T:Wichian.Core.EMIS.APS.APS">
-            <summary>
-            
             </summary>
         </member>
         <member name="F:Wichian.Core.EMIS.APS.APS.plans">
@@ -791,6 +766,125 @@
             客户信息
             </summary>
         </member>
+        <member name="P:Wichian.Core.EMIS.EmisEntity.ObjectID">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisEntity.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisEntity.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisEntity.Desc">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisEntity.CreatedUser">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisEntity.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisEntity.ModifiedUser">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisEntity.ModifiedTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.EmisList">
+            <summary>
+            列表
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisList.Group">
+            <summary>
+            分组
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisList.GroupItemCode">
+            <summary>
+            组内项编码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisList.GroupItemName">
+            <summary>
+            组内项名称
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisList.GroupItemValue">
+            <summary>
+            组内项值
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisList.GroupItemSON">
+            <summary>
+            组内项顺序
+            SON - Sort Order No.
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisList.GroupItemType">
+            <summary>
+            组内项类型
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.EmisTree">
+            <summary>
+            树型
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisTree.ParentObjID">
+            <summary>
+            父节点
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisTree.NodeLevel">
+            <summary>
+            节点层级
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisTree.TreeSON">
+            <summary>
+            节点顺序号
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.EmisTree.ExtType">
+            <summary>
+            扩展关系类型
+            1-库位关系
+            2-物品关系
+            3-库位与物品关系
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.HRS.Person.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.HRS.Person.Birthdate">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.HRS.Person.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
         <member name="T:Wichian.Core.EMIS.MES.Process">
             <summary>
             生产工序
@@ -937,6 +1031,71 @@
             供应商信息
             </summary>
         </member>
+        <member name="T:Wichian.Core.EMIS.WMS.Goods">
+            <summary>
+            货物
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.WMS.Goods.Weight">
+            <summary>
+            重量
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.WMS.Goods.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.WMS.Goods.Volume">
+            <summary>
+            容量/体积
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.WMS.Goods.Length">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.WMS.Goods.Width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.WMS.Goods.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.WMS.IWarehouse.Input">
+            <summary>
+            入库
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.WMS.IWarehouse.Output">
+            <summary>
+            出库
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.WMS.IWarehouse.Move">
+            <summary>
+            移库
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.WMS.IWarehouse.Init">
+            <summary>
+            库存初始化
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.WMS.IWarehouse.Inventory">
+            <summary>
+            库存盘点
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.WMS.IWarehouse.Modify">
+            <summary>
+            库存修正
+            </summary>
+        </member>
         <member name="T:Wichian.Core.EMIS.WMS.Materiel">
             <summary>
             库存物料
@@ -945,6 +1104,31 @@
         <member name="T:Wichian.Core.EMIS.WMS.Warehouse">
             <summary>
             仓库信息
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.WMS.StorageCategory">
+            <summary>
+            库存类别
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.WMS.StorageCategory.Value">
+            <summary>
+            价值,如：ABC
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.WMS.StorageCategory.Form">
+            <summary>
+            形态，可分为原材料库存、半成品库存、产成品库存
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.WMS.StorageCategory.Purpose">
+            <summary>
+            用途，可分为安全库存、储备库存、在途库存和正常周转库存
+            </summary>
+        </member>
+        <member name="F:Wichian.Core.EMIS.WMS.StorageCategory.DemandRelevance">
+            <summary>
+            需求相关性，可分为独立需求库存和相关需求库存
             </summary>
         </member>
         <member name="M:Wichian.Core.IEntityAction.InsertItem">
@@ -982,6 +1166,36 @@
         <member name="P:Wichian.Core.IMSREntity.MasterCode">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:SR.Ext.DingTalk">
+            <summary>
+            钉钉平台
+            </summary>
+        </member>
+        <member name="P:SR.Ext.DingTalk.CorpId">
+            <summary>
+            企业唯一标识CorpId
+            </summary>
+        </member>
+        <member name="P:SR.Ext.DingTalk.AppId">
+            <summary>
+            应用唯一标识AppId
+            </summary>
+        </member>
+        <member name="P:SR.Ext.DingTalk.AppSecret">
+            <summary>
+            个人应用AppSecret
+            </summary>
+        </member>
+        <member name="P:SR.Ext.DingTalk.UserId">
+            <summary>
+            企业内每个员工都有唯一的UserId，创建后不可修改。
+            </summary>
+        </member>
+        <member name="P:SR.Ext.DingTalk.UnionId">
+            <summary>
+            员工在当前开发者企业账号范围内的唯一标识，系统生成，固定值，不会改变。
             </summary>
         </member>
     </members>
