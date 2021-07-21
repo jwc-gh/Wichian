@@ -4,6 +4,26 @@
         <name>Wichian.Core</name>
     </assembly>
     <members>
+        <member name="T:Wichian.Core.ARM.Account">
+            <summary>
+            账号信息
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ARM.Account.AccountId">
+            <summary>
+            账号ID
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ARM.Account.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.ARM.Account.Description">
+            <summary>
+            说明
+            </summary>
+        </member>
         <member name="T:Wichian.Core.C1Entity">
             <summary>
             通用实体类：Id、创建人、修改人、创建时间、修改时间、软删除标记
@@ -97,6 +117,140 @@
         <member name="P:Wichian.Core.PrivateC2Entity`1.IsDeleted">
             <summary>
             软删除
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.ACS.ACDevice">
+            <summary>
+            访问控制设备
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACDevice.ACDType">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACDevice.ACDState">
+            <summary>
+            设备状态
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.ACS.ACObject">
+            <summary>
+            访问控制对象
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACObject.ACOType">
+            <summary>
+            对象类型
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACObject.ACOState">
+            <summary>
+            对象状态
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACObject.ACRule">
+            <summary>
+            规则---扩展从表
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACObject.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACObject.Fingerprint">
+            <summary>
+            指纹
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACObject.Voiceprint">
+            <summary>
+            声纹
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACObject.Facemage">
+            <summary>
+            人脸图像
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.ACObject.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.ACS.IACDevice">
+            <summary>
+            门禁设备
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.ACS.IACDevice.Open">
+            <summary>
+            开启
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.ACS.IACDevice.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.ACS.IACDevice.Hang">
+            <summary>
+            挂起/锁死
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.ACS.IACDevice.Verify(System.String)">
+            <summary>
+            验证
+            </summary>
+            <param name="fPara"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Wichian.Core.EMIS.ACS.IACDevice.Caculate">
+            <summary>
+            计算滞留时间
+            </summary>
+        </member>
+        <member name="M:Wichian.Core.EMIS.ACS.IACDevice.Alarm">
+            <summary>
+            报警
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Wichian.Core.EMIS.ACS.Vehicle">
+            <summary>
+            车辆
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.Vehicle.VehicleType">
+            <summary>
+            车辆类型
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.Vehicle.VehicleState">
+            <summary>
+            车辆状态
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.Vehicle.CarPLNo">
+            <summary>
+            车牌号
+            Car License Plate Number
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.Vehicle.VehicleRole">
+            <summary>
+            车辆角色
+            </summary>
+        </member>
+        <member name="P:Wichian.Core.EMIS.ACS.Vehicle.VehicleBrand">
+            <summary>
+            车辆品牌
+            </summary>
+        </member>
+        <member name="T:Wichian.Core.EMIS.APS.APS">
+            <summary>
+            
             </summary>
         </member>
         <member name="F:Wichian.Core.EMIS.APS.APS.plans">
