@@ -15,7 +15,8 @@ namespace Wichian.Web.Entry
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.Inject()
-                                     .UseStartup<Startup>();
+                              .UseStartup<Startup>()
+                              .UseSerilogDefault();
                 });
     }
 }

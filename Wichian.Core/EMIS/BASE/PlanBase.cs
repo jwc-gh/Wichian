@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础计划类
     /// </summary>
-    public abstract class PlanBase : C2Entity
+    public class PlanBase : C2Entity
     {
         /// <summary>
         /// 计划类型

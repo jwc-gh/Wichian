@@ -1,9 +1,16 @@
-﻿using Furion;
-using System;
+﻿using Furion.Extras.Admin.NET;
+using Furion.Extras.Admin.NET.Service;
+using Furion;
+using Furion.Extras.Admin.NET.Options;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using OnceMi.AspNetCore.OSS;
+using Serilog;
 using Yitter.IdGenerator;
 
 namespace Wichian.Web.Core
@@ -12,15 +19,63 @@ namespace Wichian.Web.Core
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddConfigurableOptions<RefreshTokenSettingOptions>();
+            services.AddJwt<JwtHandler>(enableGlobalAuthorize: true);
+            services.AddCorsAccessor();
+            services.AddRemoteRequest();
             services.AddControllersWithViews()
-                        .AddInject();
-            services.AddRemoteRequest(options =>{
-                options.AddHttpClient("baidu_pan", c =>
+                    .AddMvcFilter<RequestActionFilter>()
+                    .AddNewtonsoftJson(options =>
+                    {
+                        // 首字母小写(驼峰样式)
+                        options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                        // 时间格式化
+                        options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
+                        // 忽略循环引用
+                        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                        // 忽略空值
+                        // options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                    })
+                    .AddInjectWithUnifyResult<XnRestfulResultProvider>();
+            services.AddViewEngine();
+            services.AddSignalR();
+            services.AddSimpleEventBus();
+
+            if (App.Configuration["Cache:CacheType"] == "RedisCache")
+            {
+                services.AddStackExchangeRedisCache(options =>
                 {
-                    c.BaseAddress = new Uri("https://pan.baidu.com/");
-                    c.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
+                    options.Configuration = App.Configuration["Cache:RedisConnectionString"]; // redis连接配置
+                    options.InstanceName = App.Configuration["Cache:InstanceName"]; // 键名前缀
                 });
+            }
+
+            //// default minio
+            //// 添加默认对象储存配置信息
+            //services.AddOSSService(option =>
+            //{
+            //    option.Provider = OSSProvider.Minio;
+            //    option.Endpoint = "oss.oncemi.com:9000";
+            //    option.AccessKey = "Q*************9";
+            //    option.SecretKey = "A**************************Q";
+            //    option.IsEnableHttps = true;
+            //    option.IsEnableCache = true;
+            //});
+
+            // aliyun oss
+            // 添加名称为‘aliyunoss’的OSS对象储存配置信息
+            services.AddOSSService("aliyunoss", option =>
+            {
+                option.Provider = OSSProvider.Aliyun;
+                option.Endpoint = "oss-cn-hangzhou.aliyuncs.com";
+                option.AccessKey = "L*******************U";
+                option.SecretKey = "5*******************************T";
+                option.IsEnableCache = true;
             });
+
+            //// qcloud oss
+            //// 从配置文件中加载节点为‘OSSProvider’的配置信息
+            //services.AddOSSService("QCloud", "OSSProvider");
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -34,35 +89,46 @@ namespace Wichian.Web.Core
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-            
-            app.UseHttpsRedirection();
+
+            //  NGINX 反向代理获取真实IP
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
+
+            // 添加状态码拦截中间件
+            app.UseUnifyResultStatusCodes();
+
+            app.UseHttpsRedirection(); // 强制https
             app.UseStaticFiles();
+
+            // Serilog请求日志中间件---必须在 UseStaticFiles 和 UseRouting 之间
+            app.UseSerilogRequestLogging();
 
             app.UseRouting();
 
+            app.UseCorsAccessor();
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseInject(string.Empty);
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<ChatHub>("/hubs/chathub");
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //设置雪花ID配置，确保每个示例的workerid不同
-            YitIdHelper.SetIdGenerator(new IdGeneratorOptions()
-            {
-                WorkerIdBitLength = byte.Parse(App.Configuration["SnowId:WorkerIdBitLength"] ?? "6"),
-                WorkerId = ushort.Parse(App.Configuration["SnowId:WorkerId"] ?? "1"),
-                SeqBitLength = byte.Parse(App.Configuration["SnowId:SeqBitLength"] ?? "6"),
-                MinSeqNumber = ushort.Parse(App.Configuration["SnowId:MinSeqNumber"] ?? "5"),
-                MaxSeqNumber = ushort.Parse(App.Configuration["SnowId:MaxSeqNumber"] ?? "0"),
-                Method = short.Parse(App.Configuration["SnowId:Method"] ?? "1"),
-                BaseTime = DateTime.Parse(App.Configuration["SnowId:BaseTime"] ?? "2000-02-20 02:20:02.20").ToUniversalTime(),
-                TopOverCostCount = int.Parse(App.Configuration["SnowId:TopOverCostCount"] ?? "2000")
-            });
+            // 设置雪花Id的workerId，确保每个实例workerId都应不同
+            var workerId = ushort.Parse(App.Configuration["SnowId:WorkerId"] ?? "1");
+            YitIdHelper.SetIdGenerator(new IdGeneratorOptions { WorkerId = workerId });
+
+            // 开启自启动定时任务
+            App.GetService<ISysTimerService>().StartTimerJob();
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础标识物类
     /// </summary>
-    public abstract class TagBase : C1Entity
+    public class TagBase : C1Entity
     {
         
     }

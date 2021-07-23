@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础任务单类
     /// </summary>
-    public abstract class JobBase : C2Entity
+    public class JobBase : C2Entity
     {
         /// <summary>
         /// 开始时间

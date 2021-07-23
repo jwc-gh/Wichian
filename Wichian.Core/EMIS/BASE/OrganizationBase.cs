@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础组织类
     /// </summary>
-    public abstract class OrganizationBase : C2Entity
+    public class OrganizationBase : C2Entity
     {
         
     }

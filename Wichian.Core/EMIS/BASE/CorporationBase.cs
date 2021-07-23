@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础法人团体类
     /// </summary>
-    public abstract class CorporationBase : C2Entity
+    public class CorporationBase : C2Entity
     {
         /// <summary>
         /// 行业

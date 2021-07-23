@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础岗位类
     /// </summary>
-    public abstract class PostBase : C2Entity
+    public class PostBase : C2Entity
     {
     }
 }

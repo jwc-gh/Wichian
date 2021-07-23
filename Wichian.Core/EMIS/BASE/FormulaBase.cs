@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础配方类
     /// </summary>
-    public abstract class FormulaBase : C2Entity
+    public class FormulaBase : C2Entity
     {
     }
 }

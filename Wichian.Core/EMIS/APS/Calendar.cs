@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.APS
     /// </summary>
     [Table("aps_calendar")]
     [Comment("日历表")]
-    public class Calendar : CalendarBase
+    public class Calendar : C2Entity//CalendarBase
     {
     }
 }

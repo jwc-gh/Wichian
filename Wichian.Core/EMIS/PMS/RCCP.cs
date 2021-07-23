@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.PMS
     /// <summary>
     /// 粗能力计划
     /// </summary>
-    public class RCCP : PlanBase
+    public class RCCP : C2Entity//PlanBase
     {
         /// <summary>
         /// 工作中心

@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.CRM
     /// <summary>
     /// 客户联系人信息
     /// </summary>
-    public class Contracts : PersonBase
+    public class Contracts : C2Entity//:PersonBase
     {
         /// <summary>
         /// 部门

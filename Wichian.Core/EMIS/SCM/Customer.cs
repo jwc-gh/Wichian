@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.SCM
     /// <summary>
     /// 客户信息
     /// </summary>
-    public class Customer : CorporationBase
+    public class Customer : C2Entity//CorporationBase
     {
     }
 }

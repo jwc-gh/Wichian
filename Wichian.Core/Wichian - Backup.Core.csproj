@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>Wichian.Core.xml</DocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.2-alpha</Version>
+    <Authors>Wichian</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CRM\**" />
+    <Compile Remove="HRM\**" />
+    <Compile Remove="MES\**" />
+    <EmbeddedResource Remove="CRM\**" />
+    <EmbeddedResource Remove="HRM\**" />
+    <EmbeddedResource Remove="MES\**" />
+    <None Remove="CRM\**" />
+    <None Remove="HRM\**" />
+    <None Remove="MES\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Wichian.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Furion.Extras.Admin.NET" Version="1.0.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EMIS\HRM\" />
+    <Folder Include="EMIS\OMS\" />
+  </ItemGroup>
+
+</Project>

@@ -21,7 +21,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="SystemAppService.cs" />
+    <Compile Remove="System\ISystemService.cs" />
+    <Compile Remove="System\SystemService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Wichian.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Wichian.Application.xml" />
   </ItemGroup>
 
   <ItemGroup>

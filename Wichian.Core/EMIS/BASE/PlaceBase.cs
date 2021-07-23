@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础场地类
     /// </summary>
-    public abstract class PlaceBase : C2Entity
+    public class PlaceBase : C2Entity
     {
         
     }

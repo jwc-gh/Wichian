@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.APS
     /// </summary>
     [Table("aps_job")]
     [Comment("生产任务单信息表")]
-    public class Job : JobBase
+    public class Job : C2Entity//JobBase
     {
         /// <summary>
         /// 生产订单

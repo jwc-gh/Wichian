@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.APS
     /// </summary>
     [Table("aps_order")]
     [Comment("生产订单信息表")]
-    public class Order : OrderBase
+    public class Order : C2Entity//OrderBase
     {        
     }
 }

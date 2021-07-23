@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.APS
     /// </summary>
     [Table("aps_equipment")]
     [Comment("生产设备信息表")]
-    public class Equipment : EquipmentBase
+    public class Equipment : C2Entity//EquipmentBase
     {
     }
 }

@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础工艺类
     /// </summary>
-    public abstract class CraftBase : C2Entity
+    public class CraftBase : C2Entity
     {
     }
 }

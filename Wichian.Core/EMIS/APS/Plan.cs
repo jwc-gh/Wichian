@@ -11,7 +11,7 @@ namespace Wichian.Core.EMIS.APS
     /// </summary>
     [Table("aps_plan")]
     [Comment("生产计划信息表")]
-    public class Plan : PlanBase
+    public class Plan : C2Entity//PlanBase
     {
 
         /// <summary>

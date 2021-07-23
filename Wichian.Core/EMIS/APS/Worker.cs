@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.APS
     /// </summary>
     [Table("aps_worker")]
     [Comment("工人信息表")]
-    public class Worker : PersonBase
+    public class Worker : C2Entity//PersonBase
     {
     }
 }

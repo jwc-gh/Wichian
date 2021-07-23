@@ -16,4 +16,6 @@
     <ProjectReference Include="..\Wichian.Web.Core\Wichian.Web.Core.csproj" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
 </Project>

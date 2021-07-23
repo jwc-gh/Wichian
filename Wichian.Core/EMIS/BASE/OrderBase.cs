@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础订单类
     /// </summary>
-    public abstract class OrderBase : C2Entity
+    public class OrderBase : C2Entity
     {
         /// <summary>
         /// 数量

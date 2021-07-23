@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.WMS
     /// <summary>
     /// 仓库信息
     /// </summary>
-    public class Warehouse : PlaceBase
+    public class Warehouse : C2Entity//PlaceBase
     {
     }
 }

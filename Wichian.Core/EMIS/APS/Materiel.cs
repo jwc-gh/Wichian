@@ -11,7 +11,7 @@ namespace Wichian.Core.EMIS.APS
     /// </summary>
     [Table("aps_materiel")]
     [Comment("物料生产计划信息表")]
-    public class Materiel : MaterielBase
+    public class Materiel : C2Entity//MaterielBase
     {
         /// <summary>
         /// 物料类型

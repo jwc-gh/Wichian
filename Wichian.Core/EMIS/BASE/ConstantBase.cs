@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础常量类
     /// </summary>
-    public abstract class ConstantBase : C2Entity
+    public class ConstantBase : C2Entity
     {
         /// <summary>
         /// 分组

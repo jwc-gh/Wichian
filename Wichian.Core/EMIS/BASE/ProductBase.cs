@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础产品类
     /// </summary>
-    public abstract class ProductBase : C2Entity
+    public class ProductBase : C2Entity
     {
     }
 }

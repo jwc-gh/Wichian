@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.APS
     /// </summary>
     [Table("aps_process")]
     [Comment("生产工序信息表")]
-    public class Process : ProcessBase
+    public class Process : C2Entity//ProcessBase
     {
         /// <summary>
         /// 顺序号

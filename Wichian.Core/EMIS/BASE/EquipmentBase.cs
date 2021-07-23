@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础设备类
     /// </summary>
-    public abstract class EquipmentBase : C2Entity
+    public class EquipmentBase : C2Entity
     {
     }
 }

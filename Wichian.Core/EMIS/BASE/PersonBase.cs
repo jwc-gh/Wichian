@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础人员类
     /// </summary>
-    public abstract class PersonBase : C2Entity
+    public class PersonBase : C2Entity
     {
         /// <summary>
         /// 居民身份证号,Resident identification number

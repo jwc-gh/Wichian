@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础工序类
     /// </summary>
-    public abstract class ProcessBase : C2Entity
+    public class ProcessBase : C2Entity
     {
         /// <summary>
         /// 类型

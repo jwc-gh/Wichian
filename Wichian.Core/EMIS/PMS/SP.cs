@@ -9,7 +9,7 @@ namespace Wichian.Core.EMIS.PMS
     /// <summary>
     /// 销售计划
     /// </summary>
-    public class SP : PlanBase
+    public class SP : C2Entity//PlanBase
     {
         /// <summary>
         /// 销售中心

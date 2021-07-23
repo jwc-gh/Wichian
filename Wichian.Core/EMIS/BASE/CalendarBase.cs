@@ -10,7 +10,7 @@ namespace Wichian.Core.EMIS
     /// <summary>
     /// 基础日历类
     /// </summary>
-    public abstract class CalendarBase : C1Entity
+    public class CalendarBase : C1Entity
     {
         /// <summary>
         /// 开始时间
