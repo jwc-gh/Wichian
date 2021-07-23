@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Wichian.Web.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Wichian.Application\Wichian.Application.csproj" />
     <ProjectReference Include="..\Wichian.Database.Migrations\Wichian.Database.Migrations.csproj" />
   </ItemGroup>
