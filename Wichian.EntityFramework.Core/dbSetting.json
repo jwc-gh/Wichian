@@ -1,7 +1,7 @@
 {
   "ConnectionStrings": {
     "DefaultConnection": "Data Source=gz-cynosdbmysql-grp-3qs5u6ex.sql.tencentcdb.com;database=Wichian;User ID=root;Password=dev@1105;pooling=true;port=28016;sslmode=none;CharSet=utf8;",
-    "MultiTenantConnection": "Data Source=./Admin.NET_SaaS.db",
+    "MultiTenantConnection": "Data Source=gz-cynosdbmysql-grp-3qs5u6ex.sql.tencentcdb.com;database=Wichian_Saas;User ID=root;Password=dev@1105;pooling=true;port=28016;sslmode=none;CharSet=utf8;",
     "EMISConnectionString": "Data Source=./emis.db",
     "ARMConnectionString": "Data Source=./arm.db"
   }
