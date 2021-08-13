@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wichian.Web.Core", "Wichian
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wichian.Web.Entry", "Wichian.Web.Entry\Wichian.Web.Entry.csproj", "{85E33845-FF47-4E27-9A2D-6AD931E068CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wichian.ConsoleApp", "Wichian.ConsoleApp\Wichian.ConsoleApp.csproj", "{2BE802E3-D657-4A0C-BC4F-1D23E5E47EC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wichian.ConsoleApp", "Wichian.ConsoleApp\Wichian.ConsoleApp.csproj", "{2BE802E3-D657-4A0C-BC4F-1D23E5E47EC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wichian.WinFormsApp", "Wichian.WinFormsApp\Wichian.WinFormsApp.csproj", "{C27DCC98-CDD6-4C07-B51B-F4B3E8858BAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wichian.WinFormsApp", "Wichian.WinFormsApp\Wichian.WinFormsApp.csproj", "{C27DCC98-CDD6-4C07-B51B-F4B3E8858BAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wichian.WpfApp", "Wichian.WpfApp\Wichian.WpfApp.csproj", "{C3CCDD0D-D69D-4AC0-9ED6-98DDF149D839}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wichian.WpfApp", "Wichian.WpfApp\Wichian.WpfApp.csproj", "{C3CCDD0D-D69D-4AC0-9ED6-98DDF149D839}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wichian.xUnit", "Wichian.xUnit\Wichian.xUnit.csproj", "{ED925C68-030C-47CA-B7F3-2DB119B7EFF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wichian.xUnit", "Wichian.xUnit\Wichian.xUnit.csproj", "{ED925C68-030C-47CA-B7F3-2DB119B7EFF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wichian.Baidu", "Wichian.Baidu\Wichian.Baidu.csproj", "{57867233-02B9-41F4-87EF-9679FDAA6403}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{ED925C68-030C-47CA-B7F3-2DB119B7EFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED925C68-030C-47CA-B7F3-2DB119B7EFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED925C68-030C-47CA-B7F3-2DB119B7EFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57867233-02B9-41F4-87EF-9679FDAA6403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57867233-02B9-41F4-87EF-9679FDAA6403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57867233-02B9-41F4-87EF-9679FDAA6403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57867233-02B9-41F4-87EF-9679FDAA6403}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
